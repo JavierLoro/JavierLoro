@@ -1,7 +1,7 @@
 # 🌟 Bienvenid@ a mi GitHub 🌟
 
 
-![GitHub Snake Animation](https://github.com/tu-usuario/tu-usuario/blob/output/github-contribution-grid-snake.svg)
+![GitHub Snake Animation](https://github.com/JavierLoro/JavierLoro/blob/output/github-contribution-grid-snake.svg)
 
 
 
