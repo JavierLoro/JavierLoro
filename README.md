@@ -7,19 +7,13 @@
 </picture>
 ---
 
-### ✨--------------------✨
-
 <div align="center">
   <img src="https://img.shields.io/badge/Creatividad-100%25-ff69b4?style=for-the-badge" />
 </div>
 
----
-
 <p align="center">
   <img src="https://media.giphy.com/media/l0HlBO7eyXzSZkJri/giphy.gif" alt="Coding gif" width="400"/>
 </p>
-
----
 
 ### 🌌 Mis proyectos son en su mayoria proyectos de Universidad 🌌
 
