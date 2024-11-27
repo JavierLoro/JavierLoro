@@ -2,7 +2,7 @@
 
 
 ![Estadísticas de GitHub](https://github-readme-stats.vercel.app/api?username=JavierLoro&show_icons=true&theme=tokyonight)
-[![Actividad reciente](https://activity-graph.herokuapp.com/graph?username=JavierLoro&theme=react-dark)](https://github.com/ashutosh00710/github-readme-activity-graph)
+[![Actividad reciente](https://activity-graph.herokuapp.com/graph?username=JavierLoro&theme=react-dark)](https://github.com/JavierLoro/github-readme-activity-graph)
 
 
 
