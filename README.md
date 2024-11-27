@@ -1,7 +1,8 @@
 # 🌟 Bienvenid@ a mi GitHub 🌟
 
 
- ![Estadísticas de GitHub](https://github-readme-stats.vercel.app/api?username=JavierLoro&show_icons=true&theme=tokyonight)
+![Estadísticas de GitHub](https://github-readme-stats.vercel.app/api?username=JavierLoro&show_icons=true&theme=tokyonight)
+![Lenguajes más usados](https://github-readme-stats.vercel.app/api/top-langs/?username=JavierLoro&layout=compact&theme=radical)
 
 
 
