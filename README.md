@@ -2,7 +2,8 @@
 
 
 ![Estadísticas de GitHub](https://github-readme-stats.vercel.app/api?username=JavierLoro&show_icons=true&theme=tokyonight)
-![Lenguajes más usados](https://github-readme-stats.vercel.app/api/top-langs/?username=JavierLoro&layout=compact&theme=radical)
+[![Actividad reciente](https://activity-graph.herokuapp.com/graph?username=JavierLoro&theme=react-dark)](https://github.com/ashutosh00710/github-readme-activity-graph)
+
 
 
 
