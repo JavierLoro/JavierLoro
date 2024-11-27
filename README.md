@@ -1,7 +1,8 @@
 # 🌟 Bienvenid@ a mi GitHub 🌟
 
 
-  ![GitHub Skyline](https://skyline.github.com/JavierLoro/2024.png)
+ ![Estadísticas de GitHub](https://github-readme-stats.vercel.app/api?username=JavierLoro&show_icons=true&theme=tokyonight)
+
 
 
 ---
