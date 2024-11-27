@@ -1,8 +1,8 @@
 # 🌟 Bienvenid@ a mi GitHub 🌟
 
-<p align="center">
-  <img src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif" alt="Welcome gif" width="300"/>
-</p>
+
+  ![GitHub Skyline](https://skyline.github.com/JavierLoro/2024.png)
+
 
 ---
 
