@@ -1,4 +1,4 @@
-### 🌟 Bienvenid@ a mi GitHub 🌟
+### 🌟 Mi GitHub 🌟
 
 
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JavierLoro/JavierLoro/output/github-contribution-grid-snake-dark.svg">
@@ -8,7 +8,10 @@
 
 <div align="center">
   
-  ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=JavierLoro&layout=compact)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=c%2B%2B&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-239120?style=flat&logo=c-sharp&logoColor=white)
+![Kotlin](https://img.shields.io/badge/Kotlin-0095D5?style=flat&logo=kotlin&logoColor=white)
 </div>
 
 <p align="center">
