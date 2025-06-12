@@ -5,10 +5,10 @@
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JavierLoro/JavierLoro/output/github-contribution-grid-snake.svg">
   <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/JavierLoro/JavierLoro/output/github-contribution-grid-snake.svg">
 </picture>
----
 
 <div align="center">
-  <img src="https://img.shields.io/badge/Creatividad-100%25-ff69b4?style=for-the-badge" />
+  
+  ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=JavierLoro&layout=compact)
 </div>
 
 <p align="center">
