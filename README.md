@@ -16,8 +16,10 @@
 
 <p align="center">
   <img src="https://media.giphy.com/media/l0HlBO7eyXzSZkJri/giphy.gif" alt="Coding gif" width="400"/>
+
+  ### 🌌 Mis proyectos son en su mayoria proyectos de Universidad 🌌
 </p>
 
-### 🌌 Mis proyectos son en su mayoria proyectos de Universidad 🌌
+
 
 <p align="center">✨ Nada que mirar por aquí. ¡Saludos! ✨</p>
