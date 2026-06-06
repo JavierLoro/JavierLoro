@@ -45,11 +45,14 @@ Diseño y opero un **homelab propio sobre Proxmox VE** (+10 contenedores LXC/VMs
 
 ### 🛠️ Stack
 
-**Frontend:** TypeScript · Next.js · TailwindCSS · JavaScript · HTML/CSS
-**Backend:** Go · Python (FastAPI/Flask) · Node · PostgreSQL · SQLite
-**Infra / DevOps:** Proxmox · LXC/Docker · Nginx · Cloudflare · Tailscale · Pi-hole · CI/CD · Linux
-**IA aplicada:** MCP (Model Context Protocol) · agentes · automatización con LLMs
-**Otros:** Kotlin · C# / .NET · C++ · Java
+| | |
+|---|---|
+| **Lenguajes** | TypeScript · JavaScript · Python · Go |
+| **Frontend** | Next.js · TailwindCSS · HTML/CSS |
+| **Backend** | FastAPI · Flask · Node · PostgreSQL · SQLite |
+| **Infra / DevOps** | Proxmox · Docker · Nginx · Cloudflare · Tailscale · Linux |
+| **IA aplicada** | MCP · agentes · automatización con LLMs |
+| **Otros** | Kotlin · C# / .NET · C++ · Java |
 
 ---
 
