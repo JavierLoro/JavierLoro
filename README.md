@@ -43,6 +43,16 @@ Diseño y opero un **homelab propio sobre Proxmox VE** (+10 contenedores LXC/VMs
 | **[mc-chunk-map](https://github.com/JavierLoro/VanillaOnlineMapMC)** | Python · FastAPI · Leaflet · Docker | Visor interactivo de biomas y terreno para mundos de Minecraft: parser NBT propio que lee los `.mca` directamente (sin plugins), con caché por chunk y carga progresiva. |
 ---
 
+---
+
+### 🏠 Infraestructura personal
+
+Opero un servidor doméstico sobre **Proxmox VE** con más de 10 contenedores LXC en producción, cada uno con un rol específico: reverse proxy con TLS, DNS interno, VPN _mesh_ (Tailscale), almacenamiento, y varios servicios propios.
+
+El flujo de trabajo habitual es: desarrollo en un **devbox** dedicado → imagen Docker publicada en GHCR → despliegue automático vía **Watchtower** en el contenedor de producción. Todo expuesto bajo dominios propios (`*.jlc-dev.me`) a través del proxy.
+
+La documentación de toda la arquitectura vive en una **wiki self-hosted** ([wiki.jlc-dev.me](https://wiki.jlc-dev.me)) integrada con agentes de IA vía MCP.
+
 ### 🛠️ Stack
 
 | | |
