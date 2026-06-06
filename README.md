@@ -2,7 +2,7 @@
 
 <p align="center">
   <b>Full-stack developer & self-hosted infrastructure engineer</b><br>
-  I build, deploy and operate my own products end-to-end — with AI as a core part of my workflow.
+  I build, deploy and operate my own products end-to-end — now with AI as a part of my workflow.
 </p>
 
 <div align="center">
