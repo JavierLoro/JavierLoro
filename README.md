@@ -30,17 +30,18 @@ Diseño y opero un **homelab propio sobre Proxmox VE** (+10 contenedores LXC/VMs
 
 | Proyecto | Stack | Descripción |
 |---|---|---|
-| **[webLogrosApp](https://github.com/JavierLoro/webLogrosApp)** | TypeScript · Docker | Plataforma web de logros y estadísticas de un club, con panel de administración protegido. En producción. |
-| **[hashiwokakeroGame](https://github.com/JavierLoro/hashiwokakeroGame)** | JavaScript · Python | Juego diario de Hashiwokakero online y gratuito. |
-| **[VanillaOnlineMapMC](https://github.com/JavierLoro/VanillaOnlineMapMC)** | Python · Docker | Mapa online para servidores de Minecraft vanilla. |
-
+| **[Bridges — Hashiwokakero](https://bridgeshashi.jlc-dev.me)** | JavaScript · Python · Cloudflare Workers | Juego diario de puentes (Hashiwokakero) online y gratuito. Sitio estático servido en el _edge_ + backend de puzzles propio. |
+| **[webLogrosApp](https://github.com/JavierLoro/webLogrosApp)** · [demo](https://logrosculipardisk.jlc-dev.me) | TypeScript · Docker · PostgreSQL | Plataforma de logros y estadísticas de un club con panel de administración protegido. En producción (Docker + Watchtower). |
+| **[@vibliofriki_bot](https://t.me/vibliofriki_bot)** | Python · Telegram | Bot que monitoriza en tiempo real la ocupación de la biblioteca del campus (API Affluences) y envía alertas configurables. |
+| **[ESIgg.lol](https://github.com/JavierLoro/esigglol)** | Next.js · TypeScript · Tailwind · SQLite · Docker | Gestor de torneos de League of Legends para la ESI (UCLM), con CI/CD. |
+| **[VanillaOnlineMapMC](https://github.com/JavierLoro/VanillaOnlineMapMC)** | Python · Docker | Visor interactivo de biomas y terreno para mundos de Minecraft: lee los `.mca` directamente, sin plugins. |
 ---
 
 ### 🛠️ Stack
 
-**Frontend:** TypeScript · Vue · Astro · JavaScript · HTML/CSS
-**Backend:** Go · Python (FastAPI/Flask) · Node
-**Infra / DevOps:** Proxmox · LXC/Docker · Nginx · Tailscale · Pi-hole · CI/CD · Linux
+**Frontend:** TypeScript · Vue · Next.js · Astro · TailwindCSS · JavaScript · HTML/CSS
+**Backend:** Go · Python (FastAPI/Flask) · Node · PostgreSQL · SQLite
+**Infra / DevOps:** Proxmox · LXC/Docker · Nginx · Cloudflare · Tailscale · Pi-hole · CI/CD · Linux
 **IA aplicada:** MCP (Model Context Protocol) · agentes · automatización con LLMs
 **Otros:** Kotlin · C# / .NET · C++ · Java
 
