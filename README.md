@@ -8,10 +8,8 @@
 <div align="center">
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
-![Vue](https://img.shields.io/badge/Vue-4FC08D?style=flat&logo=vuedotjs&logoColor=white)
 ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![Astro](https://img.shields.io/badge/Astro-BC52EE?style=flat&logo=astro&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 ![Proxmox](https://img.shields.io/badge/Proxmox-E57000?style=flat&logo=proxmox&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
@@ -39,7 +37,7 @@ Diseño y opero un **homelab propio sobre Proxmox VE** (+10 contenedores LXC/VMs
 
 ### 🛠️ Stack
 
-**Frontend:** TypeScript · Vue · Next.js · Astro · TailwindCSS · JavaScript · HTML/CSS
+**Frontend:** TypeScript · Next.js · TailwindCSS · JavaScript · HTML/CSS
 **Backend:** Go · Python (FastAPI/Flask) · Node · PostgreSQL · SQLite
 **Infra / DevOps:** Proxmox · LXC/Docker · Nginx · Cloudflare · Tailscale · Pi-hole · CI/CD · Linux
 **IA aplicada:** MCP (Model Context Protocol) · agentes · automatización con LLMs
