@@ -1,4 +1,4 @@
-h1 align="center">Hi, I'm Javier Loro 👋</h1>
+<h1 align="center">Hi, I'm Javier Loro 👋</h1>
 
 <p align="center">
   <b>Software Engineer — AI integrations, full-stack applications & self-hosted systems</b>
