@@ -19,6 +19,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./overrides.css">
 
   <title>Javier Loro — Junior Software Developer</title>
 
@@ -79,11 +80,6 @@
       <div class="hero-inner">
         <img class="avatar" src="https://avatars.githubusercontent.com/u/91896731?v=4" alt="Javier Loro" loading="eager">
 
-        <div class="eyebrow">
-          <span data-lang="en">student · junior developer · systems</span>
-          <span data-lang="es">estudiante · junior developer · sistemas</span>
-        </div>
-
         <h1>Javier Loro</h1>
         <p class="hero-role">
           <span data-lang="en">Computer Science Student · Junior Software Developer</span>
@@ -97,8 +93,8 @@
           Construyo aplicaciones full-stack, integraciones con IA y sistemas autohospedados, aprendiendo al llevar proyectos desde la idea hasta el despliegue.
         </p>
 
-        <div class="hero-tech" aria-label="Main technologies">
-          <span>TypeScript</span><span>Python</span><span>Go</span><span>MCP</span><span>Docker</span><span>Proxmox</span>
+        <div class="hero-tech" aria-label="Main technologies" data-aria-en="Main technologies" data-aria-es="Tecnologías principales">
+          <span>TypeScript</span><span>Python</span><span>Go</span><span data-lang="en">AI</span><span data-lang="es">IA</span><span>MCP</span><span>Docker</span><span>Proxmox</span>
         </div>
 
         <div class="hero-actions">
@@ -112,6 +108,12 @@
             <span data-lang="es">Correo</span>
           </a>
         </div>
+
+        <a class="hero-scroll" href="#about" aria-label="Continue to profile" data-aria-en="Continue to profile" data-aria-es="Continuar al perfil">
+          <span data-lang="en">Continue</span>
+          <span data-lang="es">Continuar</span>
+          <span class="hero-scroll-arrow" aria-hidden="true">↓</span>
+        </a>
       </div>
     </section>
 
@@ -162,11 +164,6 @@
           <div class="project-summary">
             <div class="project-topline">MCP · PERSISTENT KNOWLEDGE</div>
             <h3 class="project-title">Alexandrie — Persistent knowledge through MCP</h3>
-
-            <figure class="project-image">
-              <img src="https://raw.githubusercontent.com/JavierLoro/Alexandrie/main/.github/present.png" alt="Alexandrie knowledge base interface" loading="lazy" data-alt-en="Alexandrie knowledge base interface" data-alt-es="Interfaz de la base de conocimiento Alexandrie">
-              <figcaption><span data-lang="en">The self-hosted knowledge base I extended with an MCP layer.</span><span data-lang="es">La base de conocimiento autohospedada que extendí con una capa MCP.</span></figcaption>
-            </figure>
 
             <div class="story-grid">
               <div class="story-item"><span class="story-label"><span data-lang="en">Problem</span><span data-lang="es">Problema</span></span><p><span data-lang="en">Useful project knowledge gets fragmented between AI conversations and environments.</span><span data-lang="es">El conocimiento útil de un proyecto se fragmenta entre conversaciones y entornos de IA.</span></p></div>
