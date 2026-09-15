@@ -5,8 +5,6 @@
   const primaryNav = document.getElementById("primaryNav");
   const mainContent = document.getElementById("main-content");
   const heroActions = document.querySelector(".hero-actions");
-  const hero = document.getElementById("top");
-  const about = document.getElementById("about");
 
   const savedTheme = localStorage.getItem("portfolio-theme");
   const savedLang = localStorage.getItem("portfolio-lang");
@@ -37,33 +35,72 @@
     }
   }
 
-  let heroScrollLocked = false;
+  const sectionProgression = [
+    ["about", "projects"],
+    ["projects", "more"],
+    ["more", "infra"],
+    ["infra", "contact"]
+  ];
 
-  if (hero && about) {
-    window.addEventListener("wheel", function (event) {
-      if (event.deltaY <= 0 || heroScrollLocked) {
-        return;
+  sectionProgression.forEach(function (pair) {
+    const section = document.getElementById(pair[0]);
+    if (!section || section.querySelector(":scope > .section-scroll")) {
+      return;
+    }
+
+    const cue = document.createElement("a");
+    cue.className = "section-scroll";
+    cue.href = "#" + pair[1];
+    cue.dataset.ariaEn = "Continue to next section";
+    cue.dataset.ariaEs = "Continuar a la siguiente sección";
+    cue.setAttribute("aria-label", "Continue to next section");
+    cue.innerHTML = '<span data-lang="en">Continue</span><span data-lang="es">Continuar</span><span class="section-scroll-arrow" aria-hidden="true">↓</span>';
+    section.appendChild(cue);
+  });
+
+  const scrollSections = Array.from(document.querySelectorAll("main > .section"));
+  let sectionScrollLocked = false;
+
+  window.addEventListener("wheel", function (event) {
+    if (event.deltaY <= 0 || sectionScrollLocked || scrollSections.length < 2) {
+      return;
+    }
+
+    const navOffset = 96;
+    let currentIndex = -1;
+
+    scrollSections.forEach(function (section, index) {
+      const rect = section.getBoundingClientRect();
+      if (rect.top <= navOffset && rect.bottom > navOffset) {
+        currentIndex = index;
       }
+    });
 
-      const heroRect = hero.getBoundingClientRect();
-      const leavingHero = heroRect.top >= -96 && heroRect.bottom > window.innerHeight * 0.6;
+    if (currentIndex < 0 || currentIndex >= scrollSections.length - 1) {
+      return;
+    }
 
-      if (!leavingHero) {
-        return;
-      }
+    const currentSection = scrollSections[currentIndex];
+    const currentRect = currentSection.getBoundingClientRect();
+    const isHero = currentSection.id === "top";
+    const heroReady = isHero && currentRect.top >= -96 && currentRect.bottom > window.innerHeight * 0.6;
+    const sectionFinished = !isHero && currentRect.bottom <= window.innerHeight + 8;
 
-      event.preventDefault();
-      heroScrollLocked = true;
-      about.scrollIntoView({
-        behavior: reducedMotion ? "auto" : "smooth",
-        block: "start"
-      });
+    if (!heroReady && !sectionFinished) {
+      return;
+    }
 
-      window.setTimeout(function () {
-        heroScrollLocked = false;
-      }, reducedMotion ? 0 : 700);
-    }, { passive: false });
-  }
+    event.preventDefault();
+    sectionScrollLocked = true;
+    scrollSections[currentIndex + 1].scrollIntoView({
+      behavior: reducedMotion ? "auto" : "smooth",
+      block: "start"
+    });
+
+    window.setTimeout(function () {
+      sectionScrollLocked = false;
+    }, reducedMotion ? 0 : 700);
+  }, { passive: false });
 
   function currentLang() {
     return root.dataset.lang === "es" ? "es" : "en";
