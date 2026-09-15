@@ -1,10 +1,10 @@
 html {
-  scroll-snap-type: y proximity;
+  scroll-snap-type: y mandatory;
 }
 
 .section {
   scroll-snap-align: start;
-  scroll-snap-stop: normal;
+  scroll-snap-stop: always;
 }
 
 .hero {
