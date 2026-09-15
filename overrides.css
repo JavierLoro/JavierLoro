@@ -1,0 +1,71 @@
+html {
+  scroll-snap-type: y proximity;
+}
+
+.section {
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
+}
+
+.hero {
+  position: relative;
+  padding-bottom: 6.5rem;
+}
+
+.hero-scroll {
+  position: absolute;
+  left: 50%;
+  bottom: 1.2rem;
+  transform: translateX(-50%);
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .18rem;
+  padding: .55rem .9rem;
+  border-radius: 999px;
+  color: var(--muted);
+  text-decoration: none;
+  font-family: "JetBrains Mono", monospace;
+  font-size: .7rem;
+  font-weight: 700;
+  transition: color .18s ease, background .18s ease;
+}
+
+.hero-scroll:hover {
+  color: var(--green);
+  background: var(--green-faint);
+}
+
+.hero-scroll-arrow {
+  font-size: 1.35rem;
+  line-height: .9;
+  animation: hero-scroll-hint 1.8s ease-in-out infinite;
+}
+
+@keyframes hero-scroll-hint {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(4px); }
+}
+
+@media (max-height: 650px) {
+  .hero {
+    padding-bottom: 4rem;
+  }
+
+  .hero-scroll {
+    position: static;
+    transform: none;
+    width: max-content;
+    margin: 2rem auto 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-snap-type: none;
+  }
+
+  .hero-scroll-arrow {
+    animation: none;
+  }
+}
