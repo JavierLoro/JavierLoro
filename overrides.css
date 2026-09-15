@@ -58,6 +58,11 @@ html {
   animation: section-scroll-hint 1.8s ease-in-out infinite;
 }
 
+#projects > .center > .section-intro,
+#more > .center > .section-intro {
+  display: none;
+}
+
 @keyframes section-scroll-hint {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(4px); }
