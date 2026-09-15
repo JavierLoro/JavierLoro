@@ -496,7 +496,7 @@ main {
 }
 
 /* Inline language fragments */
-[data-lang] {
+body [data-lang] {
   display: none;
 }
 
