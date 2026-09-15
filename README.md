@@ -264,6 +264,182 @@ experience of building and connecting the **whole application lifecycle** myself
 </details>
 
 ---
+---
+
+<div align="center">
+
+<h3>🤖 Codex Projects Replica <sub>· private, ongoing</sub></h3>
+
+<p><b>Exploring persistent coordination, bounded context and verifiable workflows for coding agents.</b></p>
+
+<p>
+  <img src="https://img.shields.io/badge/AI%20Agents-orchestration-5A67D8?style=flat" alt="AI Agents">
+  <img src="https://img.shields.io/badge/Persistent%20State-project%20memory-047857?style=flat" alt="Persistent State">
+  <img src="https://img.shields.io/badge/Verification-independent%20checks-0F766E?style=flat" alt="Verification">
+  <img src="https://img.shields.io/badge/Bounded%20Context-context%20control-15803D?style=flat" alt="Bounded Context">
+  <img src="https://img.shields.io/badge/MCP-multi--channel-5A67D8?style=flat" alt="MCP">
+</p>
+
+<p>
+  A private engineering project inspired by persistent coding-agent environments.<br>
+  I am exploring how long-running software projects can keep continuity without giving every agent<br>
+  unlimited context or trusting a worker's <i>"done"</i> message as proof of completion.
+</p>
+
+</div>
+
+```mermaid
+flowchart TD
+    U["User"] --> C["Persistent Coordinator"]
+
+    C -->|"bounded goal"| O["Orchestrator"]
+
+    O --> W["Workers"]
+    O --> X["Explorer"]
+    O --> V["Independent Verifier"]
+
+    W --> R["Structured results"]
+    X --> R
+    V --> R
+
+    R --> P[("Project Control Plane")]
+    P --> M[("Persistent project memory")]
+
+    M -->|"bounded reconstruction"| C
+
+    classDef human fill:#dcfce7,stroke:#16a34a,color:#14532d;
+    classDef coord fill:#bbf7d0,stroke:#15803d,color:#14532d;
+    classDef agent fill:#ecfdf5,stroke:#22c55e,color:#14532d;
+    classDef state fill:#f0fdf4,stroke:#4ade80,color:#14532d;
+
+    class U human;
+    class C,O coord;
+    class W,X,V,R agent;
+    class P,M state;
+```
+
+<details>
+<summary>Engineering details · agent orchestration, memory and verification</summary>
+
+The project explores an architecture where **conversation, execution and durable project state are separate concerns**.
+
+### Persistent coordination
+
+The user interacts with a persistent **Coordinator** rather than directly managing individual workers.
+
+The Coordinator owns project continuity, while concrete implementation work is delegated to an **Orchestrator**.
+
+```text
+Coordinator  → understands project state and intent
+Orchestrator → executes bounded goals
+Workers      → implement concrete tasks
+Verifier     → independently checks the result
+Control Plane → stores durable project truth
+```
+
+### Bounded context
+
+Instead of continuously growing an agent conversation with the complete project history, context is reconstructed from persistent state.
+
+Each agent receives only the information required for its current task.
+
+This is intended to reduce:
+
+- unnecessary repository reads,
+- duplicated context,
+- token usage,
+- accidental scope expansion,
+- dependence on a single long-running conversation.
+
+### Independent verification
+
+Worker completion is not treated as proof that a task is correct.
+
+A separate verifier checks the implementation independently through evidence such as:
+
+- repository state,
+- branch and commit state,
+- expected file changes,
+- automated tests,
+- regression suites,
+- task boundaries,
+- structured completion receipts.
+
+The verifier returns explicit outcomes:
+
+```text
+VERIFIED
+FAILED
+BLOCKED
+```
+
+It does not silently repair the implementation or continue to the next task.
+
+### Persistent project memory
+
+Project state survives individual agent sessions.
+
+The system separates durable information such as:
+
+- tasks and dependencies,
+- project decisions,
+- execution results,
+- verification evidence,
+- receipts,
+- relevant historical context.
+
+New agent sessions can reconstruct the context they need without replaying the complete development history.
+
+### Coordinator and Orchestrator separation
+
+The architecture deliberately separates two responsibilities:
+
+```text
+Coordinator owns continuity.
+Orchestrator owns execution.
+Control Plane owns project truth.
+```
+
+The Coordinator remains persistent and user-facing.
+
+The Orchestrator can be temporary and focused on executing a bounded goal using workers, explorers or verifiers.
+
+### Replaceable entry points
+
+The Coordinator is designed as a logical project role rather than something tied to one particular chat application.
+
+The same project could eventually be accessed through different channels:
+
+```text
+CLI
+MCP / ChatGPT
+Codex
+Web
+Messaging clients
+```
+
+Those channels interact with the same Coordinator Service and persistent project state rather than implementing their own project logic.
+
+### Agent permissions
+
+Another area I am exploring is restricting what different agent roles are allowed to do.
+
+For example, a Coordinator can be given access to project state and approved documentation while being prevented from directly modifying production code or invoking arbitrary execution.
+
+The goal is to enforce important boundaries **below the language model**, rather than relying only on prompts.
+
+### Development principle
+
+A recurring design rule in the project is:
+
+> **LLMs reason. Code verifies. Persistent state provides continuity.**
+
+The project is currently private while I continue developing and evaluating the architecture.
+
+</details>
+
+---
+
 
 <h2 align="center">🛠️ Other public work</h2>
 
