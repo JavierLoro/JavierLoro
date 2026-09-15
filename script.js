@@ -4,6 +4,7 @@
   const langBtn = document.getElementById("langToggle");
   const primaryNav = document.getElementById("primaryNav");
   const mainContent = document.getElementById("main-content");
+  const heroActions = document.querySelector(".hero-actions");
 
   const savedTheme = localStorage.getItem("portfolio-theme");
   const savedLang = localStorage.getItem("portfolio-lang");
@@ -15,6 +16,22 @@
 
   if (mainContent) {
     mainContent.setAttribute("tabindex", "-1");
+  }
+
+  if (heroActions && !heroActions.querySelector('a[href="https://github.com/JavierLoro"]')) {
+    const githubLink = document.createElement("a");
+    githubLink.className = "btn-ghost";
+    githubLink.href = "https://github.com/JavierLoro";
+    githubLink.target = "_blank";
+    githubLink.rel = "noopener noreferrer";
+    githubLink.textContent = "GitHub ↗";
+
+    const primaryAction = heroActions.querySelector(".btn-green");
+    if (primaryAction) {
+      primaryAction.insertAdjacentElement("afterend", githubLink);
+    } else {
+      heroActions.prepend(githubLink);
+    }
   }
 
   function currentLang() {
