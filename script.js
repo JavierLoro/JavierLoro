@@ -5,11 +5,14 @@
   const primaryNav = document.getElementById("primaryNav");
   const mainContent = document.getElementById("main-content");
   const heroActions = document.querySelector(".hero-actions");
+  const hero = document.getElementById("top");
+  const about = document.getElementById("about");
 
   const savedTheme = localStorage.getItem("portfolio-theme");
   const savedLang = localStorage.getItem("portfolio-lang");
   const preferredDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
   const preferredLang = navigator.language && navigator.language.toLowerCase().startsWith("es") ? "es" : "en";
+  const reducedMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   root.dataset.theme = savedTheme || (preferredDark ? "dark" : "light");
   root.dataset.lang = savedLang || preferredLang;
@@ -32,6 +35,34 @@
     } else {
       heroActions.prepend(githubLink);
     }
+  }
+
+  let heroScrollLocked = false;
+
+  if (hero && about) {
+    window.addEventListener("wheel", function (event) {
+      if (event.deltaY <= 0 || heroScrollLocked) {
+        return;
+      }
+
+      const heroRect = hero.getBoundingClientRect();
+      const leavingHero = heroRect.top >= -96 && heroRect.bottom > window.innerHeight * 0.6;
+
+      if (!leavingHero) {
+        return;
+      }
+
+      event.preventDefault();
+      heroScrollLocked = true;
+      about.scrollIntoView({
+        behavior: reducedMotion ? "auto" : "smooth",
+        block: "start"
+      });
+
+      window.setTimeout(function () {
+        heroScrollLocked = false;
+      }, reducedMotion ? 0 : 700);
+    }, { passive: false });
   }
 
   function currentLang() {
