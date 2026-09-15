@@ -3,71 +3,113 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Javier Loro — Software Engineer focused on AI integrations, full-stack applications and self-hosted systems.">
-  <meta name="theme-color" content="#0f7a4d">
-  <title>Javier Loro — Software Engineer</title>
+  <meta name="description" content="Javier Loro — Computer Science student and junior software developer building full-stack applications, AI integrations and self-hosted systems.">
+  <meta name="theme-color" content="#0b6b43">
 
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Javier Loro — Junior Software Developer">
+  <meta property="og:description" content="Full-stack applications, AI integrations and self-hosted systems — from idea to deployment.">
+  <meta property="og:url" content="https://javierloro.github.io/JavierLoro/">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/91896731?v=4">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="canonical" href="https://javierloro.github.io/JavierLoro/">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
+
+  <title>Javier Loro — Junior Software Developer</title>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Javier Loro",
+    "url": "https://javierloro.github.io/JavierLoro/",
+    "image": "https://avatars.githubusercontent.com/u/91896731?v=4",
+    "email": "mailto:javierlc18@gmail.com",
+    "jobTitle": "Computer Science Student · Junior Software Developer",
+    "sameAs": [
+      "https://github.com/JavierLoro",
+      "https://www.linkedin.com/in/javier-loro-c/"
+    ]
+  }
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">
+    <span data-lang="en">Skip to content</span>
+    <span data-lang="es">Saltar al contenido</span>
+  </a>
+
   <header class="site-nav">
     <div class="nav-shell">
       <a class="brand" href="#top">Javier<span class="brand-mark">Loro</span></a>
 
-      <nav class="nav-links" aria-label="Primary">
-        <a href="#projects">
+      <nav class="nav-links" id="primaryNav" aria-label="Primary navigation">
+        <a href="#projects" data-section-link="projects">
           <span data-lang="en">Projects</span>
           <span data-lang="es">Proyectos</span>
         </a>
-        <a href="#infra">
+        <a href="#more" data-section-link="more">
+          <span data-lang="en">More work</span>
+          <span data-lang="es">Más proyectos</span>
+        </a>
+        <a href="#infra" data-section-link="infra">
           <span data-lang="en">Infrastructure</span>
           <span data-lang="es">Infraestructura</span>
         </a>
-        <a href="#contact">
+        <a href="#contact" data-section-link="contact">
           <span data-lang="en">Contact</span>
           <span data-lang="es">Contacto</span>
         </a>
       </nav>
 
       <div class="nav-actions">
-        <button class="icon-btn" id="langToggle" type="button" aria-label="Change language">ES</button>
-        <button class="icon-btn" id="themeToggle" type="button" aria-label="Change theme">◐</button>
+        <button class="icon-btn" id="langToggle" type="button">ES</button>
+        <button class="icon-btn" id="themeToggle" type="button">◐</button>
       </div>
     </div>
   </header>
 
-  <main id="top">
-    <section class="section hero">
+  <main id="main-content">
+    <section class="section hero" id="top">
       <div class="hero-inner">
-        <img class="avatar"
-             src="https://avatars.githubusercontent.com/u/91896731?v=4"
-             alt="Javier Loro"
-             loading="eager">
+        <img class="avatar" src="https://avatars.githubusercontent.com/u/91896731?v=4" alt="Javier Loro" loading="eager">
 
-        <div class="eyebrow">software · ai · systems</div>
+        <div class="eyebrow">
+          <span data-lang="en">student · junior developer · systems</span>
+          <span data-lang="es">estudiante · junior developer · sistemas</span>
+        </div>
 
-        <h1>Javier Loro<br><span>Software Engineer</span></h1>
+        <h1>Javier Loro</h1>
+        <p class="hero-role">
+          <span data-lang="en">Computer Science Student · Junior Software Developer</span>
+          <span data-lang="es">Estudiante de Ingeniería Informática · Junior Software Developer</span>
+        </p>
 
         <p class="hero-lead" data-lang="en">
-          I build and operate applications, and design integrations that let AI agents
-          work with persistent knowledge, real software and automated workflows.
+          I build full-stack applications, AI integrations and self-hosted systems, learning by taking projects from idea to deployment.
+        </p>
+        <p class="hero-lead" data-lang="es">
+          Construyo aplicaciones full-stack, integraciones con IA y sistemas autohospedados, aprendiendo al llevar proyectos desde la idea hasta el despliegue.
         </p>
 
-        <p class="hero-lead" data-lang="es">
-          Construyo y opero aplicaciones, y diseño integraciones para que agentes de IA
-          puedan trabajar con conocimiento persistente, software real y flujos automatizados.
-        </p>
+        <div class="hero-tech" aria-label="Main technologies">
+          <span>TypeScript</span><span>Python</span><span>Go</span><span>MCP</span><span>Docker</span><span>Proxmox</span>
+        </div>
 
         <div class="hero-actions">
           <a class="btn-green" href="#projects">
-            <span data-lang="en">See selected work</span>
+            <span data-lang="en">View projects</span>
             <span data-lang="es">Ver proyectos</span>
           </a>
-          <a class="btn-ghost" href="https://github.com/JavierLoro" target="_blank" rel="noopener">
-            GitHub ↗
+          <a class="btn-ghost" href="https://www.linkedin.com/in/javier-loro-c/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <a class="btn-ghost" href="mailto:javierlc18@gmail.com">
+            <span data-lang="en">Email</span>
+            <span data-lang="es">Correo</span>
           </a>
         </div>
       </div>
@@ -77,632 +119,198 @@
       <div class="center">
         <div class="section-kicker">01 / PROFILE</div>
         <h2 class="section-title">
-          <span data-lang="en">What I build</span>
-          <span data-lang="es">Qué construyo</span>
+          <span data-lang="en">What I like building</span>
+          <span data-lang="es">Qué me gusta construir</span>
         </h2>
-
         <p class="section-intro" data-lang="en">
-          I like working across the whole system: the application, the integrations around it
-          and the infrastructure that keeps it running.
+          I am especially interested in understanding the whole system: application code, integrations, deployment and the infrastructure behind it.
         </p>
-
         <p class="section-intro" data-lang="es">
-          Me gusta trabajar sobre el sistema completo: la aplicación, las integraciones que la rodean
-          y la infraestructura que la mantiene funcionando.
+          Me interesa especialmente comprender el sistema completo: código de aplicación, integraciones, despliegue y la infraestructura que hay detrás.
         </p>
       </div>
 
       <div class="cap-grid">
         <article class="cap-card">
-          <div class="cap-icon">🌐</div>
-          <h3>
-            <span data-lang="en">Applications</span>
-            <span data-lang="es">Aplicaciones</span>
-          </h3>
-          <p>
-            <span data-lang="en">Full-stack software from UI to persistence.</span>
-            <span data-lang="es">Software full-stack desde la interfaz hasta la persistencia.</span>
-          </p>
+          <div class="cap-icon" aria-hidden="true">🌐</div>
+          <h3><span data-lang="en">Applications</span><span data-lang="es">Aplicaciones</span></h3>
+          <p><span data-lang="en">Full-stack software from interface to persistence.</span><span data-lang="es">Software full-stack desde la interfaz hasta la persistencia.</span></p>
         </article>
-
         <article class="cap-card">
-          <div class="cap-icon">🧠</div>
-          <h3>AI integrations</h3>
-          <p>
-            <span data-lang="en">MCP & WebMCP interfaces between agents, knowledge and applications.</span>
-            <span data-lang="es">Interfaces MCP y WebMCP entre agentes, conocimiento y aplicaciones.</span>
-          </p>
+          <div class="cap-icon" aria-hidden="true">🧠</div>
+          <h3><span data-lang="en">AI integrations</span><span data-lang="es">Integraciones con IA</span></h3>
+          <p><span data-lang="en">MCP, WebMCP and agent-facing interfaces over real applications and knowledge.</span><span data-lang="es">MCP, WebMCP e interfaces para agentes sobre aplicaciones y conocimiento reales.</span></p>
         </article>
-
         <article class="cap-card">
-          <div class="cap-icon">🏠</div>
-          <h3>
-            <span data-lang="en">Self-hosted systems</span>
-            <span data-lang="es">Sistemas autohospedados</span>
-          </h3>
-          <p>
-            <span data-lang="en">Deployment, networking, updates, monitoring and backups.</span>
-            <span data-lang="es">Despliegue, redes, actualizaciones, monitorización y copias de seguridad.</span>
-          </p>
+          <div class="cap-icon" aria-hidden="true">🏠</div>
+          <h3><span data-lang="en">Self-hosted systems</span><span data-lang="es">Sistemas autohospedados</span></h3>
+          <p><span data-lang="en">Containers, networking, deployment, monitoring and backups.</span><span data-lang="es">Contenedores, redes, despliegue, monitorización y copias de seguridad.</span></p>
         </article>
       </div>
     </section>
 
     <section class="section" id="projects">
       <div class="center">
-        <div class="section-kicker">02 / SELECTED WORK</div>
-        <h2 class="section-title">
-          <span data-lang="en">Projects that shaped how I work</span>
-          <span data-lang="es">Proyectos que han definido cómo trabajo</span>
-        </h2>
-
-        <p class="section-intro" data-lang="en">
-          Each project is presented in layers: the main idea first,
-          then the engineering details if you want to go deeper.
-        </p>
-
-        <p class="section-intro" data-lang="es">
-          Cada proyecto se presenta por capas: primero la idea principal
-          y después los detalles técnicos si quieres profundizar.
-        </p>
+        <div class="section-kicker">02 / FEATURED PROJECTS</div>
+        <h2 class="section-title"><span data-lang="en">Three projects, three parts of the stack</span><span data-lang="es">Tres proyectos, tres partes del sistema</span></h2>
+        <p class="section-intro" data-lang="en">The short version is visible first. Architecture and implementation details stay one click deeper.</p>
+        <p class="section-intro" data-lang="es">Primero se ve la versión corta. La arquitectura y los detalles de implementación quedan a un clic de profundidad.</p>
       </div>
 
       <div class="projects">
-
-        <!-- Alexandrie -->
         <article class="project-card">
           <div class="project-summary">
             <div class="project-topline">MCP · PERSISTENT KNOWLEDGE</div>
+            <h3 class="project-title">Alexandrie — Persistent knowledge through MCP</h3>
 
-            <h3 class="project-title">
-              <a href="https://github.com/JavierLoro/Alexandrie" target="_blank" rel="noopener">
-                Alexandrie — Persistent knowledge through MCP ↗
-              </a>
-            </h3>
+            <figure class="project-image">
+              <img src="https://raw.githubusercontent.com/JavierLoro/Alexandrie/main/.github/present.png" alt="Alexandrie knowledge base interface" loading="lazy" data-alt-en="Alexandrie knowledge base interface" data-alt-es="Interfaz de la base de conocimiento Alexandrie">
+              <figcaption><span data-lang="en">The self-hosted knowledge base I extended with an MCP layer.</span><span data-lang="es">La base de conocimiento autohospedada que extendí con una capa MCP.</span></figcaption>
+            </figure>
 
-            <p class="project-claim" data-lang="en">
-              I use Alexandrie as my self-hosted knowledge base and built an MCP layer on top
-              so Claude, coding agents and other clients can access the same persistent information
-              across environments and conversations.
-            </p>
-
-            <p class="project-claim" data-lang="es">
-              Uso Alexandrie como base de conocimiento autohospedada y construí una capa MCP
-              para que Claude, agentes de programación y otros clientes accedan a la misma
-              información persistente entre entornos y conversaciones.
-            </p>
-
-            <div class="tags">
-              <span class="tag">MCP</span>
-              <span class="tag">TypeScript</span>
-              <span class="tag">Go</span>
-              <span class="tag">Streamable HTTP</span>
-              <span class="tag">Docker</span>
+            <div class="story-grid">
+              <div class="story-item"><span class="story-label"><span data-lang="en">Problem</span><span data-lang="es">Problema</span></span><p><span data-lang="en">Useful project knowledge gets fragmented between AI conversations and environments.</span><span data-lang="es">El conocimiento útil de un proyecto se fragmenta entre conversaciones y entornos de IA.</span></p></div>
+              <div class="story-item"><span class="story-label"><span data-lang="en">What I built</span><span data-lang="es">Qué construí</span></span><p><span data-lang="en">An MCP server over my Alexandrie fork with semantic read/write tools, Streamable HTTP and context-efficient responses.</span><span data-lang="es">Un servidor MCP sobre mi fork de Alexandrie con herramientas semánticas de lectura/escritura, Streamable HTTP y respuestas eficientes en contexto.</span></p></div>
+              <div class="story-item result"><span class="story-label"><span data-lang="en">Result</span><span data-lang="es">Resultado</span></span><p><span data-lang="en">The same persistent knowledge can be reused by multiple MCP clients without copying full documents into every session.</span><span data-lang="es">El mismo conocimiento persistente puede reutilizarse desde distintos clientes MCP sin copiar documentos completos en cada sesión.</span></p></div>
+              <div class="story-item"><span class="story-label"><span data-lang="en">Role / scope</span><span data-lang="es">Rol / alcance</span></span><p><span data-lang="en">Fork maintainer · MCP extension, HTML documents, backend hardening and deployment.</span><span data-lang="es">Mantenimiento del fork · extensión MCP, documentos HTML, hardening del backend y despliegue.</span></p></div>
             </div>
 
-            <div class="flow">
-              <span class="flow-node">Claude / agents</span>
-              <span class="flow-arrow">→</span>
-              <span class="flow-node">Custom MCP</span>
-              <span class="flow-arrow">→</span>
-              <span class="flow-node">Persistent knowledge</span>
-            </div>
+            <div class="tags"><span class="tag">MCP</span><span class="tag">TypeScript</span><span class="tag">Go</span><span class="tag">Streamable HTTP</span><span class="tag">Docker</span></div>
+            <div class="project-actions"><a class="project-link" href="https://github.com/JavierLoro/Alexandrie" target="_blank" rel="noopener noreferrer"><span data-lang="en">View code</span><span data-lang="es">Ver código</span> ↗</a></div>
           </div>
 
           <details>
-            <summary>
-              <span data-lang="en">Engineering details</span>
-              <span data-lang="es">Detalles técnicos</span>
-            </summary>
-
+            <summary><span data-lang="en">Explore engineering details</span><span data-lang="es">Explorar detalles técnicos</span></summary>
             <div class="detail-body">
               <div data-lang-block="en">
-                <p>
-                  I extended an existing self-hosted application with an MCP server exposing its knowledge model
-                  through semantic operations.
-                </p>
-                <ul>
-                  <li>Tools for navigating, searching, reading and modifying documents.</li>
-                  <li>Outline and section-level reads to avoid loading full documents unnecessarily.</li>
-                  <li>Focused tool responses to reduce context usage.</li>
-                  <li>Streamable HTTP access with authentication and token handling.</li>
-                  <li>MCP rendering kept synchronized with the application's Markdown renderer.</li>
-                  <li>Deployment and operation on my own infrastructure.</li>
-                </ul>
-                <p class="principle">
-                  The goal was not to add a chat to a wiki, but to turn persistent knowledge into a reusable
-                  capability for different agents and environments.
-                </p>
+                <ul><li>Navigation, search, outline, section-level reads and write operations designed as semantic MCP tools.</li><li>Token funnel: agents can inspect an outline or one section instead of loading an entire document.</li><li>Write responses avoid echoing unnecessary content.</li><li>The MCP Markdown pipeline is regenerated from the application's renderer so both outputs stay aligned.</li><li>Remote access uses Streamable HTTP, authentication and restart-free token rotation.</li></ul>
+                <p class="principle">The interesting part was turning persistent knowledge into a reusable capability for agents, not adding another chat interface.</p>
               </div>
-
               <div data-lang-block="es">
-                <p>
-                  Extendí una aplicación autohospedada existente con un servidor MCP que expone su modelo
-                  de conocimiento mediante operaciones semánticas.
-                </p>
-                <ul>
-                  <li>Herramientas para navegar, buscar, leer y modificar documentos.</li>
-                  <li>Lecturas por esquema y sección para evitar cargar documentos completos innecesariamente.</li>
-                  <li>Respuestas de herramientas ajustadas para reducir contexto.</li>
-                  <li>Acceso Streamable HTTP con autenticación y gestión de tokens.</li>
-                  <li>Renderizado MCP sincronizado con el renderer Markdown de la aplicación.</li>
-                  <li>Despliegue y operación en mi propia infraestructura.</li>
-                </ul>
-                <p class="principle">
-                  El objetivo no era añadir un chat a una wiki, sino convertir conocimiento persistente en una
-                  capacidad reutilizable para distintos agentes y entornos.
-                </p>
+                <ul><li>Navegación, búsqueda, esquemas, lecturas por sección y escritura diseñadas como herramientas MCP semánticas.</li><li>Token funnel: el agente puede inspeccionar un esquema o una sección sin cargar el documento completo.</li><li>Las respuestas de escritura evitan devolver contenido innecesario.</li><li>El pipeline Markdown de MCP se regenera desde el renderer principal para mantener ambos resultados alineados.</li><li>El acceso remoto usa Streamable HTTP, autenticación y rotación de token sin reinicio.</li></ul>
+                <p class="principle">La parte interesante era convertir el conocimiento persistente en una capacidad reutilizable para agentes, no añadir otra interfaz de chat.</p>
               </div>
             </div>
           </details>
         </article>
 
-        <!-- Workspace Platform -->
         <article class="project-card">
           <div class="project-summary">
-            <div class="project-topline">WEBMCP · AGENT-FACING APPLICATIONS</div>
+            <div class="project-topline">WEBMCP · HUMAN + AGENT WORKFLOWS</div>
+            <h3 class="project-title">Workspace Platform — Learning WebMCP</h3>
 
-            <h3 class="project-title">
-              <a href="https://github.com/JavierLoro/wiki-agent-webmcp" target="_blank" rel="noopener">
-                Workspace Platform — Learning WebMCP ↗
-              </a>
-            </h3>
-
-            <p class="project-claim" data-lang="en">
-              A practical environment for learning WebMCP: instead of making an agent navigate the UI visually,
-              the application exposes semantic operations over its own domain.
-            </p>
-
-            <p class="project-claim" data-lang="es">
-              Un entorno práctico para aprender WebMCP: en lugar de obligar al agente a navegar visualmente
-              por la interfaz, la aplicación expone operaciones semánticas sobre su propio dominio.
-            </p>
-
-            <div class="tags">
-              <span class="tag">WebMCP</span>
-              <span class="tag">React</span>
-              <span class="tag">TypeScript</span>
-              <span class="tag">Node.js</span>
-              <span class="tag">SQLite</span>
-              <span class="tag">Docker</span>
+            <div class="project-diagram" role="img" aria-label="Workspace Platform architecture" data-aria-en="Workspace Platform architecture connecting human UI and AI agents to persistent application state" data-aria-es="Arquitectura de Workspace Platform conectando la interfaz humana y agentes de IA con estado persistente">
+              <div class="diagram-row"><span class="diagram-node">Human</span><span class="diagram-arrow">→</span><span class="diagram-node">Visual UI</span></div>
+              <div class="diagram-hub">Shared workspace<br><small>persistent state</small></div>
+              <div class="diagram-row"><span class="diagram-node">AI agent</span><span class="diagram-arrow">→</span><span class="diagram-node">WebMCP</span></div>
+              <div class="diagram-foot"><span>Resident Agent</span><span>Import Agent</span><span>Human approval</span></div>
             </div>
 
-            <div class="flow">
-              <span class="flow-node">Human / Web UI</span>
-              <span class="flow-arrow">↘</span>
-              <span class="flow-node">Application state</span>
-              <span class="flow-arrow">↖</span>
-              <span class="flow-node">AI / WebMCP</span>
+            <div class="story-grid">
+              <div class="story-item"><span class="story-label"><span data-lang="en">Problem</span><span data-lang="es">Problema</span></span><p><span data-lang="en">Long-running projects lose continuity when context is spread across conversations, notes and different agents.</span><span data-lang="es">Los proyectos largos pierden continuidad cuando el contexto queda repartido entre conversaciones, notas y distintos agentes.</span></p></div>
+              <div class="story-item"><span class="story-label"><span data-lang="en">What I built</span><span data-lang="es">Qué construí</span></span><p><span data-lang="en">A self-hosted workspace exposing semantic WebMCP operations, with persistent state, human approval and bounded repository imports.</span><span data-lang="es">Un workspace autohospedado que expone operaciones WebMCP semánticas, con estado persistente, aprobación humana e importación acotada de repositorios.</span></p></div>
+              <div class="story-item result"><span class="story-label"><span data-lang="en">Result</span><span data-lang="es">Resultado</span></span><p><span data-lang="en">Humans and external agents work over the same durable project state instead of reconstructing it from each chat.</span><span data-lang="es">Personas y agentes externos trabajan sobre el mismo estado durable del proyecto en vez de reconstruirlo desde cada chat.</span></p></div>
+              <div class="story-item"><span class="story-label"><span data-lang="en">Role / scope</span><span data-lang="es">Rol / alcance</span></span><p><span data-lang="en">Creator · product model, React UI, Express API, WebMCP tools, agents, SQLite persistence and Docker deployment.</span><span data-lang="es">Creador · modelo de producto, UI React, API Express, herramientas WebMCP, agentes, persistencia SQLite y despliegue Docker.</span></p></div>
             </div>
+
+            <div class="tags"><span class="tag">WebMCP</span><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Express</span><span class="tag">SQLite</span><span class="tag">Docker</span></div>
+            <div class="project-actions"><a class="project-link" href="https://github.com/JavierLoro/wiki-agent-webmcp" target="_blank" rel="noopener noreferrer"><span data-lang="en">View code</span><span data-lang="es">Ver código</span> ↗</a></div>
           </div>
 
           <details>
-            <summary>
-              <span data-lang="en">What I explored</span>
-              <span data-lang="es">Qué exploré</span>
-            </summary>
-
+            <summary><span data-lang="en">Explore engineering details</span><span data-lang="es">Explorar detalles técnicos</span></summary>
             <div class="detail-body">
-              <div data-lang-block="en">
-                <ul>
-                  <li>Semantic domain operations instead of UI automation.</li>
-                  <li>Which capabilities should be exposed to agents and which should remain internal.</li>
-                  <li>Focused context instead of returning the entire application state.</li>
-                  <li>Agent proposals separated from authoritative human decisions.</li>
-                  <li>Persistent state shared between humans and external agents.</li>
-                  <li>Keeping the web application usable without WebMCP.</li>
-                  <li>Explicit budgets for repository exploration, calls, bytes, tokens and estimated cost.</li>
-                </ul>
-              </div>
-
-              <div data-lang-block="es">
-                <ul>
-                  <li>Operaciones semánticas del dominio en lugar de automatización visual de la interfaz.</li>
-                  <li>Qué capacidades deben exponerse a agentes y cuáles deben permanecer internas.</li>
-                  <li>Contexto acotado en lugar de devolver todo el estado de la aplicación.</li>
-                  <li>Propuestas del agente separadas de decisiones humanas autoritativas.</li>
-                  <li>Estado persistente compartido entre personas y agentes externos.</li>
-                  <li>Mantener la aplicación web utilizable aunque WebMCP no esté disponible.</li>
-                  <li>Presupuestos explícitos para exploración de repositorios, llamadas, bytes, tokens y coste estimado.</li>
-                </ul>
-              </div>
+              <div data-lang-block="en"><ul><li>Domain operations instead of visual UI automation.</li><li>Agent proposals remain different from authoritative human decisions.</li><li>Resident Agent is read-only; Import Agent is ephemeral and cannot confirm its own output.</li><li>Repository exploration has explicit limits on calls, files, bytes, tokens and estimated cost.</li><li>Imports separate facts, inferences, unknowns and provenance before a human confirms them.</li></ul><p class="principle">Agents come and go. The workspace remembers.</p></div>
+              <div data-lang-block="es"><ul><li>Operaciones del dominio en lugar de automatización visual de la interfaz.</li><li>Las propuestas del agente siguen separadas de las decisiones humanas autoritativas.</li><li>Resident Agent es de solo lectura; Import Agent es efímero y no puede confirmar su propio resultado.</li><li>La exploración de repositorios tiene límites explícitos de llamadas, archivos, bytes, tokens y coste estimado.</li><li>Las importaciones separan hechos, inferencias, incógnitas y procedencia antes de la confirmación humana.</li></ul><p class="principle">Los agentes vienen y van. El workspace recuerda.</p></div>
             </div>
           </details>
         </article>
 
-        <!-- ESIgg.lol -->
         <article class="project-card">
           <div class="project-summary">
             <div class="project-topline">PRODUCTION · DELIVERY · OPERATIONS</div>
+            <h3 class="project-title">ESIgg.lol</h3>
 
-            <h3 class="project-title">
-              <a href="https://github.com/JavierLoro/esigglol" target="_blank" rel="noopener">
-                ESIgg.lol ↗
-              </a>
-            </h3>
-
-            <p class="project-claim" data-lang="en">
-              A self-hosted web application where the interesting engineering extends beyond features:
-              testing, container delivery, private-network deployment, observability, backups and recovery.
-            </p>
-
-            <p class="project-claim" data-lang="es">
-              Una aplicación web autohospedada donde la ingeniería interesante va más allá de las funcionalidades:
-              pruebas, entrega de contenedores, despliegue por red privada, observabilidad, backups y recuperación.
-            </p>
-
-            <div class="tags">
-              <span class="tag">Next.js</span>
-              <span class="tag">TypeScript</span>
-              <span class="tag">SQLite WAL</span>
-              <span class="tag">Docker</span>
-              <span class="tag">GitHub Actions</span>
-              <span class="tag">Tailscale</span>
-              <span class="tag">Prometheus</span>
+            <div class="project-diagram esigg-diagram" role="img" aria-label="ESIgg.lol production pipeline" data-aria-en="ESIgg.lol production pipeline from code and tests to GHCR, Tailscale and Proxmox" data-aria-es="Pipeline de producción de ESIgg.lol desde código y tests hasta GHCR, Tailscale y Proxmox">
+              <div class="diagram-row pipeline"><span class="diagram-node">Code</span><span class="diagram-arrow">→</span><span class="diagram-node">Tests / build</span><span class="diagram-arrow">→</span><span class="diagram-node">GHCR</span></div>
+              <div class="diagram-row pipeline"><span class="diagram-node">Tailscale</span><span class="diagram-arrow">→</span><span class="diagram-node">Proxmox</span><span class="diagram-arrow">→</span><span class="diagram-node">Docker</span></div>
+              <div class="diagram-foot"><span>Prometheus</span><span>Validated backups</span><span>Riot / Twitch APIs</span></div>
             </div>
 
-            <div class="flow">
-              <span class="flow-node">Code</span>
-              <span class="flow-arrow">→</span>
-              <span class="flow-node">CI / tests</span>
-              <span class="flow-arrow">→</span>
-              <span class="flow-node">GHCR</span>
-              <span class="flow-arrow">→</span>
-              <span class="flow-node">Tailscale</span>
-              <span class="flow-arrow">→</span>
-              <span class="flow-node">Proxmox</span>
+            <div class="story-grid">
+              <div class="story-item"><span class="story-label"><span data-lang="en">Problem</span><span data-lang="es">Problema</span></span><p><span data-lang="en">A real tournament application needs more than features: it has to be deployable, observable and recoverable.</span><span data-lang="es">Una aplicación real de torneos necesita más que funcionalidades: debe poder desplegarse, observarse y recuperarse.</span></p></div>
+              <div class="story-item"><span class="story-label"><span data-lang="en">What I built</span><span data-lang="es">Qué construí</span></span><p><span data-lang="en">A Next.js tournament platform with admin/team/public areas, Riot and Twitch integrations, tests, CI/CD, metrics and automated backups.</span><span data-lang="es">Una plataforma de torneos en Next.js con áreas pública, de equipos y administración, integraciones Riot/Twitch, tests, CI/CD, métricas y backups automáticos.</span></p></div>
+              <div class="story-item result"><span class="story-label"><span data-lang="en">Result</span><span data-lang="es">Resultado</span></span><p><span data-lang="en">Used for internal League of Legends tournaments at ESI-UCLM and operated end-to-end on my self-hosted infrastructure.</span><span data-lang="es">Usada para torneos internos de League of Legends en ESI-UCLM y operada de extremo a extremo en mi infraestructura autohospedada.</span></p></div>
+              <div class="story-item"><span class="story-label"><span data-lang="en">Role / scope</span><span data-lang="es">Rol / alcance</span></span><p><span data-lang="en">Creator & maintainer · application, integrations, deployment, monitoring, backup and recovery.</span><span data-lang="es">Creador y mantenedor · aplicación, integraciones, despliegue, monitorización, backup y recuperación.</span></p></div>
             </div>
 
-            <div class="usage">
-              <span data-lang="en">Real use: internal League of Legends tournaments at ESI-UCLM.</span>
-              <span data-lang="es">Uso real: torneos internos de League of Legends en ESI-UCLM.</span>
-            </div>
+            <div class="tags"><span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">SQLite WAL</span><span class="tag">Docker</span><span class="tag">GitHub Actions</span><span class="tag">Tailscale</span><span class="tag">Prometheus</span></div>
+            <div class="project-actions"><a class="project-link" href="https://esigglol.jlc-dev.me" target="_blank" rel="noopener noreferrer"><span data-lang="en">Live app</span><span data-lang="es">Ver aplicación</span> ↗</a><a class="project-link secondary" href="https://github.com/JavierLoro/esigglol" target="_blank" rel="noopener noreferrer"><span data-lang="en">View code</span><span data-lang="es">Ver código</span> ↗</a></div>
           </div>
 
           <details>
-            <summary>
-              <span data-lang="en">Engineering details</span>
-              <span data-lang="es">Detalles técnicos</span>
-            </summary>
-
+            <summary><span data-lang="en">Explore engineering details</span><span data-lang="es">Explorar detalles técnicos</span></summary>
             <div class="detail-body">
-              <div data-lang-block="en">
-                <ul>
-                  <li>Next.js + TypeScript with SQLite WAL persistence.</li>
-                  <li>Authentication and role-specific access.</li>
-                  <li>Riot and Twitch API integrations.</li>
-                  <li>Zod validation, Pino logging, health endpoints and Prometheus-compatible metrics.</li>
-                  <li>Vitest and Playwright testing.</li>
-                  <li>GitHub Actions builds and publishes Docker images to GHCR.</li>
-                  <li>Private deployment through Tailscale to the self-hosted environment.</li>
-                  <li>Automated SQLite backups with validation and retention.</li>
-                </ul>
-
-                <p class="principle">
-                  This project taught me the difference between “an application works”
-                  and “an application can be operated safely over time.”
-                </p>
-              </div>
-
-              <div data-lang-block="es">
-                <ul>
-                  <li>Next.js + TypeScript con persistencia SQLite en modo WAL.</li>
-                  <li>Autenticación y accesos diferenciados por rol.</li>
-                  <li>Integraciones con las APIs de Riot y Twitch.</li>
-                  <li>Validación con Zod, logging con Pino, endpoints de salud y métricas compatibles con Prometheus.</li>
-                  <li>Pruebas con Vitest y Playwright.</li>
-                  <li>GitHub Actions construye y publica imágenes Docker en GHCR.</li>
-                  <li>Despliegue privado mediante Tailscale hacia el entorno autohospedado.</li>
-                  <li>Copias SQLite automatizadas con validación y retención.</li>
-                </ul>
-
-                <p class="principle">
-                  Este proyecto me enseñó la diferencia entre “la aplicación funciona”
-                  y “la aplicación puede operarse con seguridad a lo largo del tiempo”.
-                </p>
-              </div>
-            </div>
-          </details>
-        </article>
-
-        <!-- webLogrosApp -->
-        <article class="project-card">
-          <div class="project-summary">
-            <div class="project-topline">FULL-STACK · END-TO-END</div>
-
-            <h3 class="project-title">
-              <a href="https://github.com/JavierLoro/webLogrosApp" target="_blank" rel="noopener">
-                webLogrosApp ↗
-              </a>
-            </h3>
-
-            <p class="project-claim" data-lang="en">
-              A progressive end-to-end project where I built and connected each layer myself:
-              frontend, backend, authentication, database, containers, reverse proxying,
-              CI/CD and production deployment.
-            </p>
-
-            <p class="project-claim" data-lang="es">
-              Un proyecto progresivo de extremo a extremo donde construí y conecté cada capa:
-              frontend, backend, autenticación, base de datos, contenedores, proxy inverso,
-              CI/CD y despliegue en producción.
-            </p>
-
-            <div class="tags">
-              <span class="tag">Next.js</span>
-              <span class="tag">Express</span>
-              <span class="tag">PostgreSQL</span>
-              <span class="tag">Prisma</span>
-              <span class="tag">Docker</span>
-              <span class="tag">Nginx</span>
-              <span class="tag">GHCR</span>
-            </div>
-
-            <div class="flow">
-              <span class="flow-node">Next.js</span>
-              <span class="flow-arrow">→</span>
-              <span class="flow-node">Express</span>
-              <span class="flow-arrow">→</span>
-              <span class="flow-node">Prisma</span>
-              <span class="flow-arrow">→</span>
-              <span class="flow-node">PostgreSQL</span>
-            </div>
-          </div>
-
-          <details>
-            <summary>
-              <span data-lang="en">Engineering details</span>
-              <span data-lang="es">Detalles técnicos</span>
-            </summary>
-
-            <div class="detail-body">
-              <div data-lang-block="en">
-                <ul>
-                  <li>Frontend/backend separation with Next.js and Express.</li>
-                  <li>Relational data modelling with Prisma and PostgreSQL.</li>
-                  <li>JWT authentication, migrations and API design.</li>
-                  <li>Docker images and Docker Compose for local and production environments.</li>
-                  <li>Nginx reverse proxying and environment/secrets configuration.</li>
-                  <li>GitHub Actions + GHCR + automated updates with Watchtower.</li>
-                </ul>
-                <p class="principle">
-                  This project represents the experience of building and connecting
-                  the whole application lifecycle myself.
-                </p>
-              </div>
-
-              <div data-lang-block="es">
-                <ul>
-                  <li>Separación frontend/backend con Next.js y Express.</li>
-                  <li>Modelado relacional con Prisma y PostgreSQL.</li>
-                  <li>Autenticación JWT, migraciones y diseño de API.</li>
-                  <li>Imágenes Docker y Docker Compose para entornos local y producción.</li>
-                  <li>Proxy inverso con Nginx y configuración de entornos/secretos.</li>
-                  <li>GitHub Actions + GHCR + actualizaciones automatizadas con Watchtower.</li>
-                </ul>
-                <p class="principle">
-                  Este proyecto representa la experiencia de construir y conectar
-                  por mí mismo todo el ciclo de vida de una aplicación.
-                </p>
-              </div>
-            </div>
-          </details>
-        </article>
-
-        <!-- Codex Projects Replica -->
-        <article class="project-card">
-          <div class="project-summary">
-            <div class="project-topline">PRIVATE · ONGOING · AGENT ORCHESTRATION</div>
-
-            <h3 class="project-title">Codex Projects Replica</h3>
-
-            <p class="project-claim" data-lang="en">
-              A private engineering project exploring persistent coordination,
-              bounded context and verifiable workflows for coding agents.
-            </p>
-
-            <p class="project-claim" data-lang="es">
-              Un proyecto privado de ingeniería que explora coordinación persistente,
-              contexto acotado y flujos verificables para agentes de programación.
-            </p>
-
-            <div class="tags">
-              <span class="tag">Agent orchestration</span>
-              <span class="tag">Persistent state</span>
-              <span class="tag">Independent verification</span>
-              <span class="tag">Bounded context</span>
-              <span class="tag">MCP</span>
-            </div>
-
-            <div class="flow">
-              <span class="flow-node">User</span>
-              <span class="flow-arrow">→</span>
-              <span class="flow-node">Coordinator</span>
-              <span class="flow-arrow">→</span>
-              <span class="flow-node">Orchestrator</span>
-              <span class="flow-arrow">→</span>
-              <span class="flow-node">Workers / Verifier</span>
-              <span class="flow-arrow">→</span>
-              <span class="flow-node">Control Plane</span>
-            </div>
-          </div>
-
-          <details>
-            <summary>
-              <span data-lang="en">Architecture and principles</span>
-              <span data-lang="es">Arquitectura y principios</span>
-            </summary>
-
-            <div class="detail-body">
-              <div data-lang-block="en">
-                <p>The project separates conversation, execution and durable project state.</p>
-
-                <h4>Persistent coordination</h4>
-                <p>The Coordinator owns continuity and delegates bounded goals to a temporary Orchestrator.</p>
-
-                <h4>Bounded context</h4>
-                <p>Agents receive only the context required for the current task rather than the full project history.</p>
-
-                <h4>Independent verification</h4>
-                <p>
-                  A separate verifier checks repository state, expected files, tests,
-                  regressions and completion evidence, returning explicit
-                  VERIFIED / FAILED / BLOCKED outcomes.
-                </p>
-
-                <h4>Persistent project memory</h4>
-                <p>
-                  Tasks, decisions, receipts, dependencies and verification evidence
-                  survive individual sessions.
-                </p>
-
-                <p class="principle">
-                  LLMs reason. Code verifies. Persistent state provides continuity.
-                </p>
-              </div>
-
-              <div data-lang-block="es">
-                <p>El proyecto separa conversación, ejecución y estado durable del proyecto.</p>
-
-                <h4>Coordinación persistente</h4>
-                <p>El Coordinator mantiene la continuidad y delega objetivos acotados a un Orchestrator temporal.</p>
-
-                <h4>Contexto acotado</h4>
-                <p>Los agentes reciben únicamente el contexto necesario para la tarea actual, no todo el historial del proyecto.</p>
-
-                <h4>Verificación independiente</h4>
-                <p>
-                  Un verificador separado comprueba estado del repositorio, archivos esperados,
-                  tests, regresiones y evidencia de finalización, devolviendo resultados explícitos
-                  VERIFIED / FAILED / BLOCKED.
-                </p>
-
-                <h4>Memoria persistente</h4>
-                <p>
-                  Tareas, decisiones, receipts, dependencias y evidencia de verificación
-                  sobreviven a las sesiones individuales.
-                </p>
-
-                <p class="principle">
-                  Los LLM razonan. El código verifica. El estado persistente aporta continuidad.
-                </p>
-              </div>
+              <div data-lang-block="en"><ul><li>Next.js 16, TypeScript, SQLite WAL, JWT authentication and role-specific access.</li><li>Riot Tournament API and Twitch integration.</li><li>Zod validation, Pino logging, health endpoints and Prometheus-compatible metrics.</li><li>Vitest and Playwright tests run before production delivery.</li><li>GitHub Actions publishes the Docker image to GHCR and reaches the private environment through Tailscale.</li><li>SQLite backups are created, validated and retained automatically.</li></ul><p class="principle">This project pushed me from “the app works” to “the app can be deployed, updated, observed, backed up and recovered.”</p></div>
+              <div data-lang-block="es"><ul><li>Next.js 16, TypeScript, SQLite WAL, autenticación JWT y acceso por roles.</li><li>Integraciones con Riot Tournament API y Twitch.</li><li>Validación Zod, logging Pino, health endpoints y métricas compatibles con Prometheus.</li><li>Tests con Vitest y Playwright antes de la entrega a producción.</li><li>GitHub Actions publica la imagen Docker en GHCR y alcanza el entorno privado mediante Tailscale.</li><li>Los backups de SQLite se crean, validan y retienen automáticamente.</li></ul><p class="principle">Este proyecto me llevó de “la app funciona” a “la app puede desplegarse, actualizarse, observarse, respaldarse y recuperarse”.</p></div>
             </div>
           </details>
         </article>
       </div>
     </section>
 
-    <section class="section" id="other">
+    <section class="section" id="more">
       <div class="center">
-        <div class="section-kicker">03 / OTHER WORK</div>
-        <h2 class="section-title">
-          <span data-lang="en">Other public work</span>
-          <span data-lang="es">Otros proyectos públicos</span>
-        </h2>
+        <div class="section-kicker">03 / MORE WORK</div>
+        <h2 class="section-title"><span data-lang="en">More projects</span><span data-lang="es">Más proyectos</span></h2>
+        <p class="section-intro" data-lang="en">Smaller cards for projects that add another piece to the picture.</p>
+        <p class="section-intro" data-lang="es">Tarjetas más compactas para proyectos que añaden otra pieza al conjunto.</p>
       </div>
 
       <div class="other-grid">
-        <a class="small-card" href="https://github.com/JavierLoro/VanillaOnlineMapMC" target="_blank" rel="noopener">
-          <strong>🗺️ mc-chunk-map</strong>
-          <span data-lang="en">Binary formats, caching, performance and self-hosted deployment.</span>
-          <span data-lang="es">Formatos binarios, caché, rendimiento y despliegue autohospedado.</span>
-        </a>
+        <a class="small-card" href="https://github.com/JavierLoro/webLogrosApp" target="_blank" rel="noopener noreferrer"><strong>🏗️ webLogrosApp</strong><span data-lang="en">End-to-end full-stack delivery: Next.js, Express, Prisma, PostgreSQL, Docker, Nginx and CI/CD.</span><span data-lang="es">Entrega full-stack de extremo a extremo: Next.js, Express, Prisma, PostgreSQL, Docker, Nginx y CI/CD.</span></a>
 
-        <a class="small-card" href="https://bridgeshashi.jlc-dev.me" target="_blank" rel="noopener">
-          <strong>🧩 Bridges</strong>
-          <span data-lang="en">A small production web product delivered as a fast public service.</span>
-          <span data-lang="es">Un pequeño producto web en producción, publicado como servicio rápido y público.</span>
-        </a>
+        <article class="small-card codex-card"><strong>🤖 Codex Projects Replica <em>private · ongoing</em></strong><span data-lang="en">Persistent coordination, bounded context, project memory and independent verification for coding agents.</span><span data-lang="es">Coordinación persistente, contexto acotado, memoria de proyecto y verificación independiente para agentes de programación.</span><details><summary><span data-lang="en">Architecture</span><span data-lang="es">Arquitectura</span></summary><div class="mini-flow"><span>User</span><b>→</b><span>Coordinator</span><b>→</b><span>Orchestrator</span><b>→</b><span>Workers / Verifier</span><b>→</b><span>Control Plane</span></div><p class="mini-principle">LLMs reason. Code verifies. Persistent state provides continuity.</p></details></article>
 
-        <a class="small-card" href="https://t.me/vibliofriki_bot" target="_blank" rel="noopener">
-          <strong>📚 @vibliofriki_bot</strong>
-          <span data-lang="en">External API automation with configurable Telegram alerts.</span>
-          <span data-lang="es">Automatización sobre una API externa con alertas configurables por Telegram.</span>
-        </a>
+        <a class="small-card" href="https://github.com/JavierLoro/VanillaOnlineMapMC" target="_blank" rel="noopener noreferrer"><strong>🗺️ mc-chunk-map</strong><span data-lang="en">Binary Minecraft region parsing, persistent caching, FastAPI, Leaflet and self-hosted deployment.</span><span data-lang="es">Parseo binario de regiones de Minecraft, caché persistente, FastAPI, Leaflet y despliegue autohospedado.</span></a>
+
+        <a class="small-card" href="https://bridgeshashi.jlc-dev.me" target="_blank" rel="noopener noreferrer"><strong>🧩 Bridges</strong><span data-lang="en">A small web product taken all the way to a public production deployment.</span><span data-lang="es">Un pequeño producto web llevado hasta un despliegue público en producción.</span></a>
+
+        <a class="small-card" href="https://t.me/vibliofriki_bot" target="_blank" rel="noopener noreferrer"><strong>📚 @vibliofriki_bot</strong><span data-lang="en">External API automation with configurable Telegram alerts.</span><span data-lang="es">Automatización de una API externa con alertas configurables por Telegram.</span></a>
       </div>
     </section>
 
     <section class="section" id="infra">
       <div class="center">
         <div class="section-kicker">04 / INFRASTRUCTURE</div>
-
-        <h2 class="section-title">
-          <span data-lang="en">Behind the projects</span>
-          <span data-lang="es">Detrás de los proyectos</span>
-        </h2>
-
-        <p class="section-intro" data-lang="en">
-          I operate the infrastructure behind many of my projects:
-          deployment, networking, persistence, updates, monitoring and backups.
-        </p>
-
-        <p class="section-intro" data-lang="es">
-          Opero la infraestructura que hay detrás de muchos de mis proyectos:
-          despliegue, redes, persistencia, actualizaciones, monitorización y copias.
-        </p>
+        <h2 class="section-title"><span data-lang="en">Behind the projects</span><span data-lang="es">Detrás de los proyectos</span></h2>
+        <p class="section-intro" data-lang="en">Many of these projects run in the same self-hosted environment I use to learn deployment and operations.</p>
+        <p class="section-intro" data-lang="es">Muchos de estos proyectos funcionan en el mismo entorno autohospedado que uso para aprender despliegue y operaciones.</p>
       </div>
 
       <div class="infra-card">
-        <div class="tags">
-          <span class="tag">Proxmox VE</span>
-          <span class="tag">Docker</span>
-          <span class="tag">Linux</span>
-          <span class="tag">Nginx</span>
-          <span class="tag">Cloudflare</span>
-          <span class="tag">Tailscale</span>
-          <span class="tag">GitHub Actions</span>
-          <span class="tag">GHCR</span>
-        </div>
-
-        <div class="infra-flow">
-          <span class="flow-node">Development</span>
-          <span class="flow-arrow">→</span>
-          <span class="flow-node">GitHub Actions</span>
-          <span class="flow-arrow">→</span>
-          <span class="flow-node">GHCR</span>
-          <span class="flow-arrow">→</span>
-          <span class="flow-node">Docker / Proxmox</span>
-          <span class="flow-arrow">→</span>
-          <span class="flow-node">Nginx / Cloudflare / Tailscale</span>
-        </div>
+        <div class="tags"><span class="tag">Proxmox VE</span><span class="tag">Docker</span><span class="tag">Linux</span><span class="tag">Nginx</span><span class="tag">Cloudflare</span><span class="tag">Tailscale</span><span class="tag">GitHub Actions</span><span class="tag">GHCR</span></div>
+        <div class="infra-flow"><span class="flow-node">Development</span><span class="flow-arrow">→</span><span class="flow-node">GitHub Actions</span><span class="flow-arrow">→</span><span class="flow-node">GHCR</span><span class="flow-arrow">→</span><span class="flow-node">Docker / Proxmox</span><span class="flow-arrow">→</span><span class="flow-node">Nginx / Cloudflare / Tailscale</span></div>
       </div>
     </section>
 
-    <section class="section" id="contact">
-      <div class="center">
+    <section class="section contact-section" id="contact">
+      <div class="contact-card">
         <div class="section-kicker">05 / CONTACT</div>
+        <h2 class="section-title"><span data-lang="en">Currently looking to keep learning on real software</span><span data-lang="es">Buscando seguir aprendiendo sobre software real</span></h2>
+        <p data-lang="en">I am interested in junior software engineering opportunities, especially around backend/full-stack development, AI integrations, internal tooling and infrastructure-oriented projects.</p>
+        <p data-lang="es">Me interesan oportunidades junior de ingeniería de software, especialmente en desarrollo backend/full-stack, integraciones con IA, herramientas internas y proyectos cercanos a infraestructura.</p>
 
-        <h2 class="section-title">
-          <span data-lang="en">Build, connect, operate.</span>
-          <span data-lang="es">Construir, conectar, operar.</span>
-        </h2>
-
-        <p class="section-intro" data-lang="en">
-          I am especially interested in projects where software, existing workflows
-          and AI integrations need to become one coherent system.
-        </p>
-
-        <p class="section-intro" data-lang="es">
-          Me interesan especialmente los proyectos donde software, flujos de trabajo existentes
-          e integraciones de IA tienen que convertirse en un único sistema coherente.
-        </p>
-
-        <div class="hero-actions">
-          <a class="btn-green" href="https://github.com/JavierLoro" target="_blank" rel="noopener">GitHub ↗</a>
-          <a class="btn-ghost" href="#top">
-            <span data-lang="en">Back to top ↑</span>
-            <span data-lang="es">Volver arriba ↑</span>
-          </a>
+        <div class="contact-links">
+          <a class="btn-green" href="mailto:javierlc18@gmail.com">javierlc18@gmail.com</a>
+          <a class="btn-ghost" href="https://www.linkedin.com/in/javier-loro-c/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <a class="btn-ghost" href="https://github.com/JavierLoro" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <span data-lang="en">Built as a lightweight static portfolio.</span>
-    <span data-lang="es">Portfolio estático, ligero y sin dependencias pesadas.</span>
-  </footer>
+  <footer class="footer"><span data-lang="en">Lightweight static portfolio · built without a frontend framework.</span><span data-lang="es">Portfolio estático y ligero · construido sin framework de frontend.</span></footer>
 
   <script src="./script.js"></script>
 </body>
